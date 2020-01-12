@@ -1,0 +1,38 @@
+.single_item_wrapper{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.single_header{
+	border-bottom: 1px solid #eee;
+	margin-bottom: 30px;
+}
+
+
+.single_header> h1{
+	font-size: 2rem !important;
+}
+
+.item_i{
+	width: 70%;
+	margin:0 auto;
+	overflow: hidden;
+}
+.product_name>h2{
+	font-size: 1.9rem;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.product_s_d p{
+	margin:0px;
+}
+
+.c-icon{
+	padding: 5px 6px;
+    border-radius: 50%;
+    background: #3cb341;
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 12px;
+}

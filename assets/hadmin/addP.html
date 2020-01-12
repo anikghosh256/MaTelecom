@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Dashbord</title>
+</head>
+
+<!-- CSS  -->
+  <link rel="stylesheet" href="../fontawesome-free-5.10.2-web/css/all.css" >
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Sacramento&display=swap" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link href="./css/admin.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+<body>
+
+	<header>
+		<nav class="hide-on-large-only">
+			<div class="container">
+				<div class="nav-wrapper">
+			      <a href="#" class="brand-logo">Dashbord</a>
+			      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			      
+			    </div>
+			</div>
+		    
+		</nav>
+
+
+		<ul id="slide-out" class="sidenav sidenav-fixed">
+			<li>
+				<div class="user-view">
+					<div class="background">
+						<img src="../img/show.jpg">
+					</div>
+					<a href="#user"><img class="circle" src="../img/f.jpg"></a>
+					<a href="#name"><span class="white-text name">John Doe</span></a>
+					<a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+				</div>
+			</li>
+			<li>
+				<a href="#!"><i class="material-icons">dashboard</i>Dashbord</a>
+			</li>
+			<li>
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header"><i class="material-icons">shopping_cart</i>Product</div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a href="#"><i class="material-icons">add_shopping_cart</i>Add Product</a></li>
+								<li><a href="#"><i class="material-icons">create</i>Edit Product</a></li>
+								<li><a href="#"><i class="material-icons">delete</i>Delete Product</a></li>
+							</ul>
+						</div>
+						
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">eco</i>Services</div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a href="#"><i class="material-icons">add</i>Add Service</a></li>
+								<li><a href="#"><i class="material-icons">create</i>Edit Service</a></li>
+								<li><a href="#"><i class="material-icons">delete</i>Delete Service</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">settings_applications</i>Settngs</div>
+						<div class="collapsible-body">
+							<ul>
+								<li><a href="#"><i class="material-icons">create</i>Site About</a></li>
+								<li><a href="#"><i class="material-icons">create</i>Change Slider Img</a></li>
+								<li><a href="#"><i class="material-icons">create</i>Social Links</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul
+			</li>
+			
+		</ul>
+	</header>
+
+
+
+	<div class="body_content">
+		<div class="container ">
+			<div class="add_product_div row">
+				<div class="add_header col s12">
+					<h2>Add New Product</h2>
+				</div>
+				<div class="col s12" >
+					<div class="row">
+					    <form class="col s12">
+					      <div class="row">
+					        <div class="input-field col s12">
+					          <input id="product_title" type="text" class="validate">
+					          <label for="product_title">Product title</label>
+					        </div>
+					      </div>
+					      <div class="row">
+					        <div class="input-field col s6">
+					          <input id="product_name" type="text" class="validate">
+					          <label for="product_name">Product Name</label>
+					        </div>
+					        <div class="input-field col s6">
+					          <input id="product_price" type="number" class="validate">
+					          <label for="product_price">Product Price</label>
+					        </div>
+					      </div>
+					      <div class="row">
+					        <div class="input-field col s12">
+					          <textarea id="short_des" class="materialize-textarea"></textarea>
+					          <label for="short_des">Short Description</label>
+					        </div>
+					      </div>
+					      <div class="row">
+					        <div class="input-field col s12">
+					          <textarea id="des" class="materialize-textarea" placeholder="Description"></textarea>
+					        </div>
+					      </div>
+					      <div class="row valign-wrapper" style="min-height: auto;">
+					        <div class="col s12 m6">
+					          Product Img:
+					          <div class="input-field inline">
+					            <input id="imgIN " type="file" class="validate" onchange="iUrl(event)">
+					          </div>
+					        </div>
+					        <div class="col s12 m6">
+					        	<div class="img_div">
+					        		<img id="imgS" src="./img/dummy.jpg">
+					        	</div>
+					        </div>
+					      </div>
+					      <div class="row">
+					      	<div class="col s6">
+					      		<input class="btn" type="submit" name="" value="Submit">
+					      	</div>
+					      	<div class="col s6 right">
+					      		<a class="btn red" href="./home.html">Cancel</a>
+					      	</div>
+					      </div>
+					    </form>
+					  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	
+  
+        
+
+
+
+
+	
+
+
+
+	<!-- js  -->
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="./tinymce/tinymce.min.js"></script>
+ 	<script src="../js/materialize.js"></script>
+ 	<script type="text/javascript" src="./js/init.js"></script>
+ 	<script type="text/javascript" src="./js/admin.js"></script>
+ 	<script type="text/javascript">
+ 		tinymce.init({
+		  selector: '#des',
+		  height: 300,
+		  menubar: false,
+		  plugins: [
+		    'advlist autolink lists link image charmap print preview anchor',
+		    'searchreplace visualblocks code fullscreen',
+		    'insertdatetime media table paste code help wordcount'
+		  ],
+		  toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help',
+		  
+		});
+ 	</script>
+
+</body>
+</html>

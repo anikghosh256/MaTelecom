@@ -1,0 +1,22 @@
+.about-warpper{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.about p{
+	font-size: 20px;
+	text-align: justify;
+}
+
+.about-main-img{
+	width: 100%;
+	overflow: hidden;
+}
+.ab-img{
+	width: 100%;
+	overflow: hidden;
+}
+
+.photo-c{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
