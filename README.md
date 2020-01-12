@@ -53,4 +53,4 @@ open "database.php" and save the database data you create within the database.
 
 ## ScreenShot
 
-![img](images/temp/matelecom.PNG?raw=true "screenshot ")
+![img](images/temp/matelecom.jpg?raw=true "screenshot ")
